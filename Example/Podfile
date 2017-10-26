@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ArenaPay_Example' do
+  pod 'ArenaPay', :path => '../'
+
+  target 'ArenaPay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
