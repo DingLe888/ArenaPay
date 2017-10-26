@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02CAF0EECEDCB0873E1EDE3C67D41C30 /* Pods-ArenaPay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B843B7395F980B918A0BB1D3713A8E /* Pods-ArenaPay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		252FC40B9CF7F8CE5169E24385A33739 /* ArenaPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38868D18B5B4ABECD1BDBCA013381D1E /* ArenaPay-dummy.m */; };
+		3FBE2B266CD1023B5D93AD037654AEDA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FE64C47BC134C0A3F0AF73FE2EE81C /* ReplaceMe.m */; };
+		441F819A39CF423A2DD19C775F70D6C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8055A18EFA5C5AB85D0C49C4CCE2E3DF /* Pods-ArenaPay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4676F6BB8812970E39E8C009B6CB488 /* Pods-ArenaPay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		854E5619276B948C115373569C623C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A1BC90CFAE59D9F233F27B84BA22FDBB /* ArenaPay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7D7D5E5A89E97E59E1E49037F5C7FD /* ArenaPay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2384080F8FD141CEE4FF08A0A484AB /* Pods-ArenaPay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8D1D8D366427FACCBFD25B1F77262 /* Pods-ArenaPay_Example-dummy.m */; };
+		CD0A6BA230F7A32CD19073B15F27C0DC /* Pods-ArenaPay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08949F97AD86BEF8B069E80483BB5864 /* Pods-ArenaPay_Tests-dummy.m */; };
+		D3B0D53493FB7B9940ACD485E7457D03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E271C0D65E81976DEB3FFFAC944D4B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7C1ACB7FD6AB8796139CDFE2A6C10A;
+			remoteInfo = ArenaPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08949F97AD86BEF8B069E80483BB5864 /* Pods-ArenaPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArenaPay_Tests-dummy.m"; sourceTree = "<group>"; };
+		0D3B183E066219F4AF49D72FD2162399 /* Pods-ArenaPay_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		13B843B7395F980B918A0BB1D3713A8E /* Pods-ArenaPay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArenaPay_Example-umbrella.h"; sourceTree = "<group>"; };
+		2389AAD0ABBFC2DE3FFA6469C31E489E /* ArenaPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArenaPay-prefix.pch"; sourceTree = "<group>"; };
+		252DCE3DF884B2375305E5E28C038611 /* Pods-ArenaPay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		294CE81709282CD44250BB9F198A54CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7D7D5E5A89E97E59E1E49037F5C7FD /* ArenaPay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArenaPay-umbrella.h"; sourceTree = "<group>"; };
+		387FBC225C093125A98F7AD96CF0DCC2 /* Pods_ArenaPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArenaPay_Tests.framework; path = "Pods-ArenaPay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38868D18B5B4ABECD1BDBCA013381D1E /* ArenaPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArenaPay-dummy.m"; sourceTree = "<group>"; };
+		3FACDCDA2475429340192855985DC368 /* Pods-ArenaPay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ArenaPay_Example.modulemap"; sourceTree = "<group>"; };
+		49FE64C47BC134C0A3F0AF73FE2EE81C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ArenaPay/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		4CFC5BEC3289340A95631EE85A52BC93 /* Pods_ArenaPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArenaPay_Example.framework; path = "Pods-ArenaPay_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B48A0F84623855D5B86A504D43D0AA /* Pods-ArenaPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArenaPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C26424960EEF00B6D15D3496C81A690 /* Pods-ArenaPay_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Example-resources.sh"; sourceTree = "<group>"; };
+		7962C0508FC9B84C4FDF67A527174A97 /* Pods-ArenaPay_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7CCA4D93A704D866F55F3E89975E384D /* ArenaPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ArenaPay.framework; path = ArenaPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		898CDA25BB34F9D2AF3F922024D85C19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ArenaPay.xcconfig; sourceTree = "<group>"; };
+		9B50ABDDFC322DDF715723705CC93C3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4676F6BB8812970E39E8C009B6CB488 /* Pods-ArenaPay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArenaPay_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B802BA7ABC605502EADBFCFC177D1A98 /* Pods-ArenaPay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ArenaPay_Tests.modulemap"; sourceTree = "<group>"; };
+		BA374ADF9EC62615A387FDFF12C4F793 /* Pods-ArenaPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C4F35DD2F75201A70D796C8B214C2370 /* ArenaPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ArenaPay.modulemap; sourceTree = "<group>"; };
+		C8FB9AB93B796DFE92FABB28EB6530FA /* Pods-ArenaPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArenaPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA85132D2C5AB5A642FA39DCAEF3BC35 /* Pods-ArenaPay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D97A556285282AD49BAC5EBFA5EF29BD /* Pods-ArenaPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EB3C04ADBC7483EE457B6788E1D97EF0 /* Pods-ArenaPay_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Tests-resources.sh"; sourceTree = "<group>"; };
+		F4D8D1D8D366427FACCBFD25B1F77262 /* Pods-ArenaPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArenaPay_Example-dummy.m"; sourceTree = "<group>"; };
+		FA48D473A0000FD683365B4BBF778651 /* Pods-ArenaPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArenaPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC273C94D2348CCBEF15CBC543DC6427 /* Pods-ArenaPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArenaPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D883B05817F970562F44577C8A728A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854E5619276B948C115373569C623C60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2AEE2A0473BF438A911C55870DF9D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441F819A39CF423A2DD19C775F70D6C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44856897856947560D952F358D37144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B0D53493FB7B9940ACD485E7457D03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C3AD493440941FDFDC51CF3F5BD86EB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8778104FE80D77BF302A9279AE42DD0C /* ArenaPay */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3177747277D28F04D747937CB46B818C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCA4D93A704D866F55F3E89975E384D /* ArenaPay.framework */,
+				4CFC5BEC3289340A95631EE85A52BC93 /* Pods_ArenaPay_Example.framework */,
+				387FBC225C093125A98F7AD96CF0DCC2 /* Pods_ArenaPay_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		398769766C91FB376F6C9BD4FFE19B22 /* Pods-ArenaPay_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				898CDA25BB34F9D2AF3F922024D85C19 /* Info.plist */,
+				B802BA7ABC605502EADBFCFC177D1A98 /* Pods-ArenaPay_Tests.modulemap */,
+				FC273C94D2348CCBEF15CBC543DC6427 /* Pods-ArenaPay_Tests-acknowledgements.markdown */,
+				52B48A0F84623855D5B86A504D43D0AA /* Pods-ArenaPay_Tests-acknowledgements.plist */,
+				08949F97AD86BEF8B069E80483BB5864 /* Pods-ArenaPay_Tests-dummy.m */,
+				0D3B183E066219F4AF49D72FD2162399 /* Pods-ArenaPay_Tests-frameworks.sh */,
+				EB3C04ADBC7483EE457B6788E1D97EF0 /* Pods-ArenaPay_Tests-resources.sh */,
+				B4676F6BB8812970E39E8C009B6CB488 /* Pods-ArenaPay_Tests-umbrella.h */,
+				CA85132D2C5AB5A642FA39DCAEF3BC35 /* Pods-ArenaPay_Tests.debug.xcconfig */,
+				BA374ADF9EC62615A387FDFF12C4F793 /* Pods-ArenaPay_Tests.release.xcconfig */,
+			);
+			name = "Pods-ArenaPay_Tests";
+			path = "Target Support Files/Pods-ArenaPay_Tests";
+			sourceTree = "<group>";
+		};
+		4616950331AB4CFB7D1F0BE394D927B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4F35DD2F75201A70D796C8B214C2370 /* ArenaPay.modulemap */,
+				980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */,
+				38868D18B5B4ABECD1BDBCA013381D1E /* ArenaPay-dummy.m */,
+				2389AAD0ABBFC2DE3FFA6469C31E489E /* ArenaPay-prefix.pch */,
+				2A7D7D5E5A89E97E59E1E49037F5C7FD /* ArenaPay-umbrella.h */,
+				294CE81709282CD44250BB9F198A54CD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ArenaPay";
+			sourceTree = "<group>";
+		};
+		46DFA8940BCA366BFC29D5CCDCE71CDD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99BD82CEC30E791FEAABAD042FEB95A2 /* Pods-ArenaPay_Example */,
+				398769766C91FB376F6C9BD4FFE19B22 /* Pods-ArenaPay_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0C3AD493440941FDFDC51CF3F5BD86EB /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3177747277D28F04D747937CB46B818C /* Products */,
+				46DFA8940BCA366BFC29D5CCDCE71CDD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8778104FE80D77BF302A9279AE42DD0C /* ArenaPay */ = {
+			isa = PBXGroup;
+			children = (
+				49FE64C47BC134C0A3F0AF73FE2EE81C /* ReplaceMe.m */,
+				4616950331AB4CFB7D1F0BE394D927B0 /* Support Files */,
+			);
+			name = ArenaPay;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		99BD82CEC30E791FEAABAD042FEB95A2 /* Pods-ArenaPay_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9B50ABDDFC322DDF715723705CC93C3D /* Info.plist */,
+				3FACDCDA2475429340192855985DC368 /* Pods-ArenaPay_Example.modulemap */,
+				C8FB9AB93B796DFE92FABB28EB6530FA /* Pods-ArenaPay_Example-acknowledgements.markdown */,
+				FA48D473A0000FD683365B4BBF778651 /* Pods-ArenaPay_Example-acknowledgements.plist */,
+				F4D8D1D8D366427FACCBFD25B1F77262 /* Pods-ArenaPay_Example-dummy.m */,
+				7962C0508FC9B84C4FDF67A527174A97 /* Pods-ArenaPay_Example-frameworks.sh */,
+				6C26424960EEF00B6D15D3496C81A690 /* Pods-ArenaPay_Example-resources.sh */,
+				13B843B7395F980B918A0BB1D3713A8E /* Pods-ArenaPay_Example-umbrella.h */,
+				252DCE3DF884B2375305E5E28C038611 /* Pods-ArenaPay_Example.debug.xcconfig */,
+				D97A556285282AD49BAC5EBFA5EF29BD /* Pods-ArenaPay_Example.release.xcconfig */,
+			);
+			name = "Pods-ArenaPay_Example";
+			path = "Target Support Files/Pods-ArenaPay_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E307CA34EE6668F408235E7CF0F3019 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CAF0EECEDCB0873E1EDE3C67D41C30 /* Pods-ArenaPay_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E38AB56FDE16E471358279A613A737A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8055A18EFA5C5AB85D0C49C4CCE2E3DF /* Pods-ArenaPay_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C755AA26311925778A8718C703967E74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BC90CFAE59D9F233F27B84BA22FDBB /* ArenaPay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C7C1ACB7FD6AB8796139CDFE2A6C10A /* ArenaPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ADB873032B7C075850D07ABA4CCC0D7 /* Build configuration list for PBXNativeTarget "ArenaPay" */;
+			buildPhases = (
+				A79AFFDE9EC0DD6A15907B4C1A108310 /* Sources */,
+				F2AEE2A0473BF438A911C55870DF9D85 /* Frameworks */,
+				C755AA26311925778A8718C703967E74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArenaPay;
+			productName = ArenaPay;
+			productReference = 7CCA4D93A704D866F55F3E89975E384D /* ArenaPay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFD587508B4930ACBFBB38F88F3D14A7 /* Pods-ArenaPay_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EDF77E9200219CEC23007CB0EC2CE6B /* Build configuration list for PBXNativeTarget "Pods-ArenaPay_Tests" */;
+			buildPhases = (
+				E9AEE929C6C4047FC2807D8A12DFF751 /* Sources */,
+				D883B05817F970562F44577C8A728A94 /* Frameworks */,
+				4E38AB56FDE16E471358279A613A737A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ArenaPay_Tests";
+			productName = "Pods-ArenaPay_Tests";
+			productReference = 387FBC225C093125A98F7AD96CF0DCC2 /* Pods_ArenaPay_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D430E5BCBCDF0FDB6247779AAFBCCB21 /* Pods-ArenaPay_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 194BF091A620656009E1CFA656789588 /* Build configuration list for PBXNativeTarget "Pods-ArenaPay_Example" */;
+			buildPhases = (
+				6EFC7A46A40D03061165A13AF9340D7A /* Sources */,
+				F44856897856947560D952F358D37144 /* Frameworks */,
+				2E307CA34EE6668F408235E7CF0F3019 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A65A7FAD1D3357448799C2B447463BED /* PBXTargetDependency */,
+			);
+			name = "Pods-ArenaPay_Example";
+			productName = "Pods-ArenaPay_Example";
+			productReference = 4CFC5BEC3289340A95631EE85A52BC93 /* Pods_ArenaPay_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3177747277D28F04D747937CB46B818C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C7C1ACB7FD6AB8796139CDFE2A6C10A /* ArenaPay */,
+				D430E5BCBCDF0FDB6247779AAFBCCB21 /* Pods-ArenaPay_Example */,
+				CFD587508B4930ACBFBB38F88F3D14A7 /* Pods-ArenaPay_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EFC7A46A40D03061165A13AF9340D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2384080F8FD141CEE4FF08A0A484AB /* Pods-ArenaPay_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79AFFDE9EC0DD6A15907B4C1A108310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252FC40B9CF7F8CE5169E24385A33739 /* ArenaPay-dummy.m in Sources */,
+				3FBE2B266CD1023B5D93AD037654AEDA /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AEE929C6C4047FC2807D8A12DFF751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0A6BA230F7A32CD19073B15F27C0DC /* Pods-ArenaPay_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A65A7FAD1D3357448799C2B447463BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ArenaPay;
+			target = 0C7C1ACB7FD6AB8796139CDFE2A6C10A /* ArenaPay */;
+			targetProxy = E271C0D65E81976DEB3FFFAC944D4B90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FEE665F704DBC65AF9EB9576E303F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ArenaPay/ArenaPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ArenaPay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ArenaPay/ArenaPay.modulemap";
+				PRODUCT_NAME = ArenaPay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7BA7BD80F8FBC714C504B40636D761E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ArenaPay/ArenaPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ArenaPay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ArenaPay/ArenaPay.modulemap";
+				PRODUCT_NAME = ArenaPay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D5C7E98185776D07CE35A0C7FB93F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252DCE3DF884B2375305E5E28C038611 /* Pods-ArenaPay_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArenaPay_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArenaPay_Example/Pods-ArenaPay_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ArenaPay_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94394FE9D1F67E71C80774E2ED4F7C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA85132D2C5AB5A642FA39DCAEF3BC35 /* Pods-ArenaPay_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArenaPay_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArenaPay_Tests/Pods-ArenaPay_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ArenaPay_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99A32DB35D96866D33F2C3DBD9568488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA374ADF9EC62615A387FDFF12C4F793 /* Pods-ArenaPay_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArenaPay_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArenaPay_Tests/Pods-ArenaPay_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ArenaPay_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0FC608A783657097EE8F18E095DF101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97A556285282AD49BAC5EBFA5EF29BD /* Pods-ArenaPay_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ArenaPay_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArenaPay_Example/Pods-ArenaPay_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ArenaPay_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		194BF091A620656009E1CFA656789588 /* Build configuration list for PBXNativeTarget "Pods-ArenaPay_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5C7E98185776D07CE35A0C7FB93F90 /* Debug */,
+				F0FC608A783657097EE8F18E095DF101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ADB873032B7C075850D07ABA4CCC0D7 /* Build configuration list for PBXNativeTarget "ArenaPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEE665F704DBC65AF9EB9576E303F8A /* Debug */,
+				7BA7BD80F8FBC714C504B40636D761E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EDF77E9200219CEC23007CB0EC2CE6B /* Build configuration list for PBXNativeTarget "Pods-ArenaPay_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94394FE9D1F67E71C80774E2ED4F7C25 /* Debug */,
+				99A32DB35D96866D33F2C3DBD9568488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ArenaPay (0.1.0)
+
+DEPENDENCIES:
+  - ArenaPay (from `../`)
+
+EXTERNAL SOURCES:
+  ArenaPay:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ArenaPay: 47f248eb7bc387cc5af4478209e98fff14235864
+
+PODFILE CHECKSUM: 5344eb62273fc843fa68ac7020a8cda8bd5b8ce1
+
+COCOAPODS: 1.4.0.beta.1
