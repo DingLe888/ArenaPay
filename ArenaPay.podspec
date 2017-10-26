@@ -36,6 +36,16 @@ TODO: Add long description of the pod here.
   #   'ArenaPay' => ['ArenaPay/Assets/*.png']
   # }
 
+  s.resource = 'Resources/*'
+
+  s.frameworks = 'SystemConfiguration','Security','CoreTelephony','UIKit','Foundation','CFNetwork','QuartzCore','CoreText','CoreGraphics','CoreMotion'
+ 
+  s.libraries = 'z','sqlite3.0','c++'
+
+  s.vendored_frameworks = 'Frameworks/*'
+
+   s.vendored_libraries = 'Libraries/*'
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

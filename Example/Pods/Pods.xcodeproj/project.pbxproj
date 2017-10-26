@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		02CAF0EECEDCB0873E1EDE3C67D41C30 /* Pods-ArenaPay_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B843B7395F980B918A0BB1D3713A8E /* Pods-ArenaPay_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		252FC40B9CF7F8CE5169E24385A33739 /* ArenaPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38868D18B5B4ABECD1BDBCA013381D1E /* ArenaPay-dummy.m */; };
-		3FBE2B266CD1023B5D93AD037654AEDA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FE64C47BC134C0A3F0AF73FE2EE81C /* ReplaceMe.m */; };
-		441F819A39CF423A2DD19C775F70D6C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		34D77384B01DB77BC25E6FB34F8CD4D0 /* WXPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E24A1212D28FA336F4035073702B8244 /* WXPayManager.m */; };
+		5B213805D4EEC10F6DAB86CF72679FBF /* WXPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4448190727FDACFE9FB604C78F9EB1A9 /* WXPayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		635AE497CB4FBC5B0C7A95B8112FA4C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7C8612CF5661537C748B2379A9E9F0BB /* README.txt in Sources */ = {isa = PBXBuildFile; fileRef = B43406C6CDA2CCD5F301D9FE06E92F49 /* README.txt */; };
 		8055A18EFA5C5AB85D0C49C4CCE2E3DF /* Pods-ArenaPay_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4676F6BB8812970E39E8C009B6CB488 /* Pods-ArenaPay_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		854E5619276B948C115373569C623C60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A1BC90CFAE59D9F233F27B84BA22FDBB /* ArenaPay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A7D7D5E5A89E97E59E1E49037F5C7FD /* ArenaPay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		942A7E07ABBEB82D283CB90E6A273C58 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B05953E9C15AE0F207675D35D8B132A4 /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD2384080F8FD141CEE4FF08A0A484AB /* Pods-ArenaPay_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D8D1D8D366427FACCBFD25B1F77262 /* Pods-ArenaPay_Example-dummy.m */; };
+		C67DF6EB802595315213D73A2251B22A /* ArenaPay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE9D008AEE5F8C55EE0BF05CCCA122 /* ArenaPay-dummy.m */; };
 		CD0A6BA230F7A32CD19073B15F27C0DC /* Pods-ArenaPay_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08949F97AD86BEF8B069E80483BB5864 /* Pods-ArenaPay_Tests-dummy.m */; };
 		D3B0D53493FB7B9940ACD485E7457D03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E7FECE00B0E72562F54F212A0D55380C /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 894CC4C0BE9197C83475F3856993DA71 /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F458A447DBA9FB267495648D4FD3EC12 /* ArenaPay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B75DF560E44584BFA743956282D5717 /* ArenaPay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD278011D8335C401DAF34387E1FFF57 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD8C724048F3E4B6C23F394BF4889E2 /* WechatAuthSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0C7C1ACB7FD6AB8796139CDFE2A6C10A;
+			remoteGlobalIDString = 1538C6803FB0DD9791AF65ACCE4099F0;
 			remoteInfo = ArenaPay;
 		};
 /* End PBXContainerItemProxy section */
@@ -33,51 +38,57 @@
 		08949F97AD86BEF8B069E80483BB5864 /* Pods-ArenaPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArenaPay_Tests-dummy.m"; sourceTree = "<group>"; };
 		0D3B183E066219F4AF49D72FD2162399 /* Pods-ArenaPay_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		13B843B7395F980B918A0BB1D3713A8E /* Pods-ArenaPay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArenaPay_Example-umbrella.h"; sourceTree = "<group>"; };
-		2389AAD0ABBFC2DE3FFA6469C31E489E /* ArenaPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArenaPay-prefix.pch"; sourceTree = "<group>"; };
+		1544359C90993F538D37CF30DDB33F77 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Libraries/libWeChatSDK.a; sourceTree = "<group>"; };
+		1AD8C724048F3E4B6C23F394BF4889E2 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		252DCE3DF884B2375305E5E28C038611 /* Pods-ArenaPay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		294CE81709282CD44250BB9F198A54CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A7D7D5E5A89E97E59E1E49037F5C7FD /* ArenaPay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArenaPay-umbrella.h"; sourceTree = "<group>"; };
+		2DFE9D008AEE5F8C55EE0BF05CCCA122 /* ArenaPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArenaPay-dummy.m"; sourceTree = "<group>"; };
+		379D7A2DAA7F0CF613D0FFEA23EED5BD /* ArenaPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ArenaPay.modulemap; sourceTree = "<group>"; };
 		387FBC225C093125A98F7AD96CF0DCC2 /* Pods_ArenaPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArenaPay_Tests.framework; path = "Pods-ArenaPay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38868D18B5B4ABECD1BDBCA013381D1E /* ArenaPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArenaPay-dummy.m"; sourceTree = "<group>"; };
 		3FACDCDA2475429340192855985DC368 /* Pods-ArenaPay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ArenaPay_Example.modulemap"; sourceTree = "<group>"; };
-		49FE64C47BC134C0A3F0AF73FE2EE81C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ArenaPay/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		4448190727FDACFE9FB604C78F9EB1A9 /* WXPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXPayManager.h; path = ArenaPay/Classes/WXPayManager.h; sourceTree = "<group>"; };
 		4CFC5BEC3289340A95631EE85A52BC93 /* Pods_ArenaPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArenaPay_Example.framework; path = "Pods-ArenaPay_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B48A0F84623855D5B86A504D43D0AA /* Pods-ArenaPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArenaPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C26424960EEF00B6D15D3496C81A690 /* Pods-ArenaPay_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Example-resources.sh"; sourceTree = "<group>"; };
 		7962C0508FC9B84C4FDF67A527174A97 /* Pods-ArenaPay_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7B75DF560E44584BFA743956282D5717 /* ArenaPay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArenaPay-umbrella.h"; sourceTree = "<group>"; };
 		7CCA4D93A704D866F55F3E89975E384D /* ArenaPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ArenaPay.framework; path = ArenaPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		894CC4C0BE9197C83475F3856993DA71 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		898CDA25BB34F9D2AF3F922024D85C19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ArenaPay.xcconfig; sourceTree = "<group>"; };
 		9B50ABDDFC322DDF715723705CC93C3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E1689707BECA59D4A3C6DD0D3A6DB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A899C3FCD37D83BAF5BE830125D5CB8D /* ArenaPay.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ArenaPay.xcconfig; sourceTree = "<group>"; };
+		B05953E9C15AE0F207675D35D8B132A4 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		B43406C6CDA2CCD5F301D9FE06E92F49 /* README.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = README.txt; path = ArenaPay/Classes/README.txt; sourceTree = "<group>"; };
 		B4676F6BB8812970E39E8C009B6CB488 /* Pods-ArenaPay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArenaPay_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B802BA7ABC605502EADBFCFC177D1A98 /* Pods-ArenaPay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ArenaPay_Tests.modulemap"; sourceTree = "<group>"; };
 		BA374ADF9EC62615A387FDFF12C4F793 /* Pods-ArenaPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C4F35DD2F75201A70D796C8B214C2370 /* ArenaPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ArenaPay.modulemap; sourceTree = "<group>"; };
 		C8FB9AB93B796DFE92FABB28EB6530FA /* Pods-ArenaPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArenaPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CA85132D2C5AB5A642FA39DCAEF3BC35 /* Pods-ArenaPay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D97A556285282AD49BAC5EBFA5EF29BD /* Pods-ArenaPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArenaPay_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E24A1212D28FA336F4035073702B8244 /* WXPayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WXPayManager.m; path = ArenaPay/Classes/WXPayManager.m; sourceTree = "<group>"; };
 		EB3C04ADBC7483EE457B6788E1D97EF0 /* Pods-ArenaPay_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArenaPay_Tests-resources.sh"; sourceTree = "<group>"; };
+		F0D8BFEEAEC6EEE9285D414B76ABD5CB /* ArenaPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArenaPay-prefix.pch"; sourceTree = "<group>"; };
 		F4D8D1D8D366427FACCBFD25B1F77262 /* Pods-ArenaPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArenaPay_Example-dummy.m"; sourceTree = "<group>"; };
 		FA48D473A0000FD683365B4BBF778651 /* Pods-ArenaPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArenaPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FC273C94D2348CCBEF15CBC543DC6427 /* Pods-ArenaPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArenaPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C72D0936FC8729F9C7040F3450B1E49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635AE497CB4FBC5B0C7A95B8112FA4C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D883B05817F970562F44577C8A728A94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				854E5619276B948C115373569C623C60 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2AEE2A0473BF438A911C55870DF9D85 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				441F819A39CF423A2DD19C775F70D6C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,14 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C3AD493440941FDFDC51CF3F5BD86EB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8778104FE80D77BF302A9279AE42DD0C /* ArenaPay */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		3177747277D28F04D747937CB46B818C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,18 +131,12 @@
 			path = "Target Support Files/Pods-ArenaPay_Tests";
 			sourceTree = "<group>";
 		};
-		4616950331AB4CFB7D1F0BE394D927B0 /* Support Files */ = {
+		3F7FE49D193B4A2A805950B42E78873A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C4F35DD2F75201A70D796C8B214C2370 /* ArenaPay.modulemap */,
-				980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */,
-				38868D18B5B4ABECD1BDBCA013381D1E /* ArenaPay-dummy.m */,
-				2389AAD0ABBFC2DE3FFA6469C31E489E /* ArenaPay-prefix.pch */,
-				2A7D7D5E5A89E97E59E1E49037F5C7FD /* ArenaPay-umbrella.h */,
-				294CE81709282CD44250BB9F198A54CD /* Info.plist */,
+				FA9F6D19921675775683F9F62F0EC40A /* ArenaPay */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ArenaPay";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		46DFA8940BCA366BFC29D5CCDCE71CDD /* Targets Support Files */ = {
@@ -151,25 +148,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		47F7EE508E91A1ED3A1FDF8E5AD91D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1544359C90993F538D37CF30DDB33F77 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0C3AD493440941FDFDC51CF3F5BD86EB /* Development Pods */,
+				3F7FE49D193B4A2A805950B42E78873A /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				3177747277D28F04D747937CB46B818C /* Products */,
 				46DFA8940BCA366BFC29D5CCDCE71CDD /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8778104FE80D77BF302A9279AE42DD0C /* ArenaPay */ = {
-			isa = PBXGroup;
-			children = (
-				49FE64C47BC134C0A3F0AF73FE2EE81C /* ReplaceMe.m */,
-				4616950331AB4CFB7D1F0BE394D927B0 /* Support Files */,
-			);
-			name = ArenaPay;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		99BD82CEC30E791FEAABAD042FEB95A2 /* Pods-ArenaPay_Example */ = {
@@ -190,6 +185,17 @@
 			path = "Target Support Files/Pods-ArenaPay_Example";
 			sourceTree = "<group>";
 		};
+		ACD086DF7325AB4A0CDDAAE6A52AF848 /* WXAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8C724048F3E4B6C23F394BF4889E2 /* WechatAuthSDK.h */,
+				894CC4C0BE9197C83475F3856993DA71 /* WXApi.h */,
+				B05953E9C15AE0F207675D35D8B132A4 /* WXApiObject.h */,
+			);
+			name = WXAPI;
+			path = ArenaPay/Classes/WXAPI;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +210,34 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB58E9FB602EAABFBAC034BF80C30F52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				379D7A2DAA7F0CF613D0FFEA23EED5BD /* ArenaPay.modulemap */,
+				A899C3FCD37D83BAF5BE830125D5CB8D /* ArenaPay.xcconfig */,
+				2DFE9D008AEE5F8C55EE0BF05CCCA122 /* ArenaPay-dummy.m */,
+				F0D8BFEEAEC6EEE9285D414B76ABD5CB /* ArenaPay-prefix.pch */,
+				7B75DF560E44584BFA743956282D5717 /* ArenaPay-umbrella.h */,
+				A0E1689707BECA59D4A3C6DD0D3A6DB1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ArenaPay";
+			sourceTree = "<group>";
+		};
+		FA9F6D19921675775683F9F62F0EC40A /* ArenaPay */ = {
+			isa = PBXGroup;
+			children = (
+				B43406C6CDA2CCD5F301D9FE06E92F49 /* README.txt */,
+				4448190727FDACFE9FB604C78F9EB1A9 /* WXPayManager.h */,
+				E24A1212D28FA336F4035073702B8244 /* WXPayManager.m */,
+				47F7EE508E91A1ED3A1FDF8E5AD91D44 /* Frameworks */,
+				EB58E9FB602EAABFBAC034BF80C30F52 /* Support Files */,
+				ACD086DF7325AB4A0CDDAAE6A52AF848 /* WXAPI */,
+			);
+			name = ArenaPay;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,24 +259,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C755AA26311925778A8718C703967E74 /* Headers */ = {
+		CD25DC9D29E09DB11134D8EE2D460B1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BC90CFAE59D9F233F27B84BA22FDBB /* ArenaPay-umbrella.h in Headers */,
+				F458A447DBA9FB267495648D4FD3EC12 /* ArenaPay-umbrella.h in Headers */,
+				FD278011D8335C401DAF34387E1FFF57 /* WechatAuthSDK.h in Headers */,
+				E7FECE00B0E72562F54F212A0D55380C /* WXApi.h in Headers */,
+				942A7E07ABBEB82D283CB90E6A273C58 /* WXApiObject.h in Headers */,
+				5B213805D4EEC10F6DAB86CF72679FBF /* WXPayManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C7C1ACB7FD6AB8796139CDFE2A6C10A /* ArenaPay */ = {
+		1538C6803FB0DD9791AF65ACCE4099F0 /* ArenaPay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADB873032B7C075850D07ABA4CCC0D7 /* Build configuration list for PBXNativeTarget "ArenaPay" */;
+			buildConfigurationList = 734F695969A327DE7AA50D60262F5C4A /* Build configuration list for PBXNativeTarget "ArenaPay" */;
 			buildPhases = (
-				A79AFFDE9EC0DD6A15907B4C1A108310 /* Sources */,
-				F2AEE2A0473BF438A911C55870DF9D85 /* Frameworks */,
-				C755AA26311925778A8718C703967E74 /* Headers */,
+				2D63441C47AEE3AD70F538B430291B91 /* Sources */,
+				C72D0936FC8729F9C7040F3450B1E49C /* Frameworks */,
+				CD25DC9D29E09DB11134D8EE2D460B1E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -309,7 +347,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C7C1ACB7FD6AB8796139CDFE2A6C10A /* ArenaPay */,
+				1538C6803FB0DD9791AF65ACCE4099F0 /* ArenaPay */,
 				D430E5BCBCDF0FDB6247779AAFBCCB21 /* Pods-ArenaPay_Example */,
 				CFD587508B4930ACBFBB38F88F3D14A7 /* Pods-ArenaPay_Tests */,
 			);
@@ -317,20 +355,21 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D63441C47AEE3AD70F538B430291B91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67DF6EB802595315213D73A2251B22A /* ArenaPay-dummy.m in Sources */,
+				7C8612CF5661537C748B2379A9E9F0BB /* README.txt in Sources */,
+				34D77384B01DB77BC25E6FB34F8CD4D0 /* WXPayManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6EFC7A46A40D03061165A13AF9340D7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AD2384080F8FD141CEE4FF08A0A484AB /* Pods-ArenaPay_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A79AFFDE9EC0DD6A15907B4C1A108310 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				252FC40B9CF7F8CE5169E24385A33739 /* ArenaPay-dummy.m in Sources */,
-				3FBE2B266CD1023B5D93AD037654AEDA /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,41 +387,12 @@
 		A65A7FAD1D3357448799C2B447463BED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ArenaPay;
-			target = 0C7C1ACB7FD6AB8796139CDFE2A6C10A /* ArenaPay */;
+			target = 1538C6803FB0DD9791AF65ACCE4099F0 /* ArenaPay */;
 			targetProxy = E271C0D65E81976DEB3FFFAC944D4B90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2FEE665F704DBC65AF9EB9576E303F8A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ArenaPay/ArenaPay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ArenaPay/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ArenaPay/ArenaPay.modulemap";
-				PRODUCT_NAME = ArenaPay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -498,9 +508,9 @@
 			};
 			name = Release;
 		};
-		7BA7BD80F8FBC714C504B40636D761E3 /* Release */ = {
+		7F5360A14513CCE540EA81218781F7A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 980789B33FE808B73AEF89A869A734FC /* ArenaPay.xcconfig */;
+			baseConfigurationReference = A899C3FCD37D83BAF5BE830125D5CB8D /* ArenaPay.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -658,6 +668,35 @@
 			};
 			name = Release;
 		};
+		F8377AC24C5252DCEA7BA54432AB80F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A899C3FCD37D83BAF5BE830125D5CB8D /* ArenaPay.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ArenaPay/ArenaPay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ArenaPay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ArenaPay/ArenaPay.modulemap";
+				PRODUCT_NAME = ArenaPay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -666,15 +705,6 @@
 			buildConfigurations = (
 				8D5C7E98185776D07CE35A0C7FB93F90 /* Debug */,
 				F0FC608A783657097EE8F18E095DF101 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2ADB873032B7C075850D07ABA4CCC0D7 /* Build configuration list for PBXNativeTarget "ArenaPay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2FEE665F704DBC65AF9EB9576E303F8A /* Debug */,
-				7BA7BD80F8FBC714C504B40636D761E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -693,6 +723,15 @@
 			buildConfigurations = (
 				94394FE9D1F67E71C80774E2ED4F7C25 /* Debug */,
 				99A32DB35D96866D33F2C3DBD9568488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		734F695969A327DE7AA50D60262F5C4A /* Build configuration list for PBXNativeTarget "ArenaPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8377AC24C5252DCEA7BA54432AB80F5 /* Debug */,
+				7F5360A14513CCE540EA81218781F7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

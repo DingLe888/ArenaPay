@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "WechatAuthSDK.h"
+#import "WXApi.h"
+#import "WXApiObject.h"
+#import "WXPayManager.h"
 
 FOUNDATION_EXPORT double ArenaPayVersionNumber;
 FOUNDATION_EXPORT const unsigned char ArenaPayVersionString[];
