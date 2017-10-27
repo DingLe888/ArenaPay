@@ -23,7 +23,7 @@
  *
  * 收到一个来自微信的请求，异步处理完成后必须调用sendResp发送处理结果给微信。
  * 可能收到的请求有GetMessageFromWXReq、ShowMessageFromWXReq等。
- * @param req 具体请求内容，是自动释放的
+
  */
 -(void) onReq:(BaseReq*)req;
 
