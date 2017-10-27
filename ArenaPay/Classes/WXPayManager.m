@@ -45,7 +45,7 @@ static WXPayManager *instance = nil;
 - (void)onResp:(BaseResp *)resp {
   if([resp isKindOfClass:[PayResp class]]){
         //支付返回结果，实际支付结果需要去微信服务器端查询
-        NSString *strMsg,*strTitle = [NSString stringWithFormat:@"支付结果"];
+        NSString *strMsg = [NSString stringWithFormat:@"支付结果"];
       NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
 
         
