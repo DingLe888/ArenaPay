@@ -1,6 +1,0 @@
-framework module Pods_ArenaPay_Tests {
-  umbrella header "Pods-ArenaPay_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

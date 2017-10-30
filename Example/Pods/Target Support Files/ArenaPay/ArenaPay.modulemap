@@ -1,6 +1,0 @@
-framework module ArenaPay {
-  umbrella header "ArenaPay-umbrella.h"
-
-  export *
-  module * { export * }
-}

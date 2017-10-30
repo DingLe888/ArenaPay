@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'ArenaPay' => ['ArenaPay/Assets/*.png']
   # }
 
-  s.resource = 'Resources/*','arena.plugins.plist'
+  s.resource = '*.plist','*.bundle'
 
   s.frameworks = 'SystemConfiguration','Security','CoreTelephony','UIKit','Foundation','CFNetwork','QuartzCore','CoreText','CoreGraphics','CoreMotion'
  
