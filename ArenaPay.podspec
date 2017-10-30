@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ArenaPay'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = '集成了微信支付和支付宝'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'ArenaPay' => ['ArenaPay/Assets/*.png']
   # }
 
-  s.resource = 'Resources/*'
+  s.resource = 'Resources/*','arena.plugins.plist'
 
   s.frameworks = 'SystemConfiguration','Security','CoreTelephony','UIKit','Foundation','CFNetwork','QuartzCore','CoreText','CoreGraphics','CoreMotion'
  
