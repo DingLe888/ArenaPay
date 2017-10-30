@@ -14,4 +14,5 @@
 +(void)applicationOpenUrl:(NSURL *)url;
 
 +(void)alipay:(NSDictionary *)data;
+
 @end

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ArenaPay'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '集成了微信支付和支付宝'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'ArenaPay' => ['ArenaPay/Assets/*.png']
   # }
 
-  s.resource = 'Resources/AlipaySDK.bundle'
+  s.resource = 'Resources/*'
 
   s.frameworks = 'SystemConfiguration','Security','CoreTelephony','UIKit','Foundation','CFNetwork','QuartzCore','CoreText','CoreGraphics','CoreMotion'
  
@@ -46,7 +46,9 @@ TODO: Add long description of the pod here.
 
   s.vendored_libraries = 'Libraries/*'
 
-
+  s.pod_target_xcconfig = { 
+    'OTHER_LDFLAGS' => ['-ObjC','-all_load'] 
+  }
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

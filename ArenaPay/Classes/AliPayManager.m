@@ -41,7 +41,7 @@ static AliPayManager *instance = nil;
             [resultDict setObject:@"success" forKey:@"result"];
             [resultDict setDictionary:resultDic];
             [[AliPayManager getInstance] sendNotifi:resultDict];
-            NSLog(@"result = %@",resultDic);
+            NSLog(@"result2 = %@",resultDic);
         }];
     }
 }
@@ -80,9 +80,12 @@ static AliPayManager *instance = nil;
     [[AlipaySDK defaultService] payOrder:orderString
                               fromScheme:appScheme
                                 callback:^(NSDictionary *resultDic) {
-                                    NSLog(@"alipay reslut = %@",resultDic);
+                                    NSLog(@"alipay reslut1 = %@",resultDic);
+                                    NSString *resultStr = [(NSString *)resultDic[@"resultStatus"]  isEqual: @"9000"] ? @"success" : @"failed";
                                     
-                                    [resultDict setObject:@"success" forKey:@"result"];
+                                    [resultDict setObject:resultStr forKey:@"result"];// memo
+                                    [resultDict setObject:resultDic[@"memo"] forKey:@"msg"];
+                                    
                                     [resultDict setDictionary:resultDic];
                                     [self sendNotifi:resultDict];
 
