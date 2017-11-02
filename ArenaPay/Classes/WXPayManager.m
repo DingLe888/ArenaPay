@@ -53,14 +53,14 @@ static WXPayManager *instance = nil;
             case WXSuccess:
                 strMsg = @"支付结果：成功！";
                 [resultDict setObject:@"success" forKey:@"result"];
-                [resultDict setObject:strMsg forKey:@"msg"];
+                [resultDict setObject:strMsg forKey:@"data"];
                 [self sendNotifi:resultDict];
                 break;
                 
             default:
                 strMsg = [NSString stringWithFormat:@"支付结果：失败！retcode = %d, retstr = %@", resp.errCode,resp.errStr];
                 [resultDict setObject:@"failed" forKey:@"result"];
-                [resultDict setObject:strMsg forKey:@"msg"];
+                [resultDict setObject:strMsg forKey:@"data"];
                 [self sendNotifi:resultDict];
                 break;
         }
@@ -78,14 +78,14 @@ static WXPayManager *instance = nil;
     NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     if ([WXApi isWXAppInstalled] == NO){
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"未安装微信" forKey:@"msg"];
+        [resultDict setObject:@"未安装微信" forKey:@"data"];
          [self sendNotifi:resultDict];
         return;
     }
     
     if (data == nil) {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"参数为nil" forKey:@"msg"];
+        [resultDict setObject:@"参数为nil" forKey:@"data"];
          [self sendNotifi:resultDict];
         return;
     }
@@ -101,7 +101,7 @@ static WXPayManager *instance = nil;
     
     if (req.partnerId == nil || req.prepayId == nil || req.nonceStr == nil || req.package == nil || req.sign == nil) {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"参数为缺少" forKey:@"msg"];
+        [resultDict setObject:@"参数为缺少" forKey:@"data"];
          [self sendNotifi:resultDict];
         return;
     }
@@ -111,7 +111,7 @@ static WXPayManager *instance = nil;
     
     if([WXApi sendReq:req] == NO){
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"调起微信支付失败" forKey:@"msg"];
+        [resultDict setObject:@"调起微信支付失败" forKey:@"data"];
         [self sendNotifi:resultDict];
         return;
     }else{

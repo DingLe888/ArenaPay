@@ -39,9 +39,10 @@ static AliPayManager *instance = nil;
             NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
 
             [resultDict setObject:@"success" forKey:@"result"];
-            [resultDict setDictionary:resultDic];
+            [resultDict setObject:resultDic forKey:@"data"];
+            
             [[AliPayManager getInstance] sendNotifi:resultDict];
-            NSLog(@"result2 = %@",resultDic);
+//            NSLog(@"result2 = %@",resultDic);
         }];
     }
 }
@@ -57,7 +58,7 @@ static AliPayManager *instance = nil;
     NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     if (data == nil) {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"参数为空" forKey:@"msg"];
+        [resultDict setObject:@"参数为空" forKey:@"data"];
         [self sendNotifi:resultDict];
         
         return;
@@ -70,7 +71,7 @@ static AliPayManager *instance = nil;
     
     if (orderString == nil || appScheme == nil) {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"参数错误" forKey:@"msg"];
+        [resultDict setObject:@"参数错误" forKey:@"data"];
         [self sendNotifi:resultDict];
         return;
     }
@@ -80,13 +81,12 @@ static AliPayManager *instance = nil;
     [[AlipaySDK defaultService] payOrder:orderString
                               fromScheme:appScheme
                                 callback:^(NSDictionary *resultDic) {
-                                    NSLog(@"alipay reslut1 = %@",resultDic);
+//                                    NSLog(@"alipay reslut1 = %@",resultDic);
                                     NSString *resultStr = [(NSString *)resultDic[@"resultStatus"]  isEqual: @"9000"] ? @"success" : @"failed";
                                     
                                     [resultDict setObject:resultStr forKey:@"result"];// memo
-                                    [resultDict setObject:resultDic[@"memo"] forKey:@"msg"];
+                                    [resultDict setObject:resultDic forKey:@"data"];
                                     
-                                    [resultDict setDictionary:resultDic];
                                     [self sendNotifi:resultDict];
 
                                 }
