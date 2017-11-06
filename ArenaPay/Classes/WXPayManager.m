@@ -37,7 +37,14 @@ static WXPayManager *instance = nil;
 }
 
 +(void)wxpay:(NSDictionary *)data{
-    [[WXPayManager getInstance] wxpay:data];
+    
+    [WXPayManager getInstance].data = data;
+    if((NSDictionary *)[data objectForKey:@"payInfo"]){
+        NSDictionary *dataDic = (NSDictionary *)[data objectForKey:@"payInfo"];
+        [[WXPayManager getInstance] wxpay:dataDic];
+    }
+    
+//    [[WXPayManager getInstance] wxpay:data];
 }
 
 
@@ -45,22 +52,20 @@ static WXPayManager *instance = nil;
 - (void)onResp:(BaseResp *)resp {
   if([resp isKindOfClass:[PayResp class]]){
         //支付返回结果，实际支付结果需要去微信服务器端查询
-        NSString *strMsg = [NSString stringWithFormat:@"支付结果"];
+
       NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
 
         
         switch (resp.errCode) {
             case WXSuccess:
-                strMsg = @"支付结果：成功！";
                 [resultDict setObject:@"success" forKey:@"result"];
-                [resultDict setObject:strMsg forKey:@"data"];
+                [resultDict setObject:@{@"resultStatus":@"9000",@"result":@"success",@"memo":@"支付结果：成功！"} forKey:@"data"];
                 [self sendNotifi:resultDict];
                 break;
                 
             default:
-                strMsg = [NSString stringWithFormat:@"支付结果：失败！retcode = %d, retstr = %@", resp.errCode,resp.errStr];
                 [resultDict setObject:@"failed" forKey:@"result"];
-                [resultDict setObject:strMsg forKey:@"data"];
+                [resultDict setObject:@{@"resultStatus":@(resp.errCode),@"result":@"failed",@"memo":@"支付结果：失败！"} forKey:@"data"];
                 [self sendNotifi:resultDict];
                 break;
         }
@@ -74,18 +79,17 @@ static WXPayManager *instance = nil;
 // 发起支付
 -(void)wxpay:(NSDictionary *)data{
     
-    self.data = data;
     NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
     if ([WXApi isWXAppInstalled] == NO){
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"未安装微信" forKey:@"data"];
+        [resultDict setObject:@{@"resultStatus":@"3000",@"result":@"failed",@"memo":@"未安装微信"} forKey:@"data"];
          [self sendNotifi:resultDict];
         return;
     }
     
     if (data == nil) {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"参数为nil" forKey:@"data"];
+        [resultDict setObject:@{@"resultStatus":@"1000",@"result":@"failed",@"memo":@"参数为空"} forKey:@"data"];
          [self sendNotifi:resultDict];
         return;
     }
@@ -101,7 +105,7 @@ static WXPayManager *instance = nil;
     
     if (req.partnerId == nil || req.prepayId == nil || req.nonceStr == nil || req.package == nil || req.sign == nil) {
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"参数为缺少" forKey:@"data"];
+        [resultDict setObject:@{@"resultStatus":@"2000",@"result":@"failed",@"memo":@"参数错误"} forKey:@"data"];
          [self sendNotifi:resultDict];
         return;
     }
@@ -111,7 +115,8 @@ static WXPayManager *instance = nil;
     
     if([WXApi sendReq:req] == NO){
         [resultDict setObject:@"failed" forKey:@"result"];
-        [resultDict setObject:@"调起微信支付失败" forKey:@"data"];
+        [resultDict setObject:@{@"resultStatus":@"5000",@"result":@"failed",@"memo":@"调起微信支付失败"} forKey:@"data"];
+        
         [self sendNotifi:resultDict];
         return;
     }else{
