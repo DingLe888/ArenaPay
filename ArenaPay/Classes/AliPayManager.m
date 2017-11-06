@@ -81,7 +81,7 @@ static AliPayManager *instance = nil;
     [[AlipaySDK defaultService] payOrder:orderString
                               fromScheme:appScheme
                                 callback:^(NSDictionary *resultDic) {
-//                                    NSLog(@"alipay reslut1 = %@",resultDic);
+                                    NSLog(@"alipay reslut1 = %@",resultDic);
                                     NSString *resultStr = [(NSString *)resultDic[@"resultStatus"]  isEqual: @"9000"] ? @"success" : @"failed";
                                     
                                     [resultDict setObject:resultStr forKey:@"result"];// memo
