@@ -14,4 +14,7 @@
 +(BOOL)applicationOpenUrl:(NSURL *)url;
 
 +(void)wxpay:(NSDictionary *)data;
+
++(void)sendAuthRequest:(void(^)(NSDictionary *))callBack;
+
 @end

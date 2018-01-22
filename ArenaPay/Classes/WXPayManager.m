@@ -6,11 +6,16 @@
 //
 
 #import "WXPayManager.h"
+//#import "WXAPI.h"
 #import "WXAPI.h"
 
 @interface WXPayManager()<WXApiDelegate>
 
 @property (nonatomic,strong)NSDictionary *data;
+
+@property (nonatomic,copy)NSString *authState;
+
+@property (nonatomic,copy) void(^callBack)(NSDictionary *);
 
 @end
 @implementation WXPayManager
@@ -46,34 +51,6 @@ static WXPayManager *instance = nil;
     
 //    [[WXPayManager getInstance] wxpay:data];
 }
-
-
-#pragma mark - WXApiDelegate
-- (void)onResp:(BaseResp *)resp {
-  if([resp isKindOfClass:[PayResp class]]){
-        //支付返回结果，实际支付结果需要去微信服务器端查询
-
-      NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
-
-        
-        switch (resp.errCode) {
-            case WXSuccess:
-                [resultDict setObject:@"success" forKey:@"result"];
-                [resultDict setObject:@{@"resultStatus":@"9000",@"result":@"success",@"memo":@"支付结果：成功！"} forKey:@"data"];
-                [self sendNotifi:resultDict];
-                break;
-                
-            default:
-                [resultDict setObject:@"failed" forKey:@"result"];
-                [resultDict setObject:@{@"resultStatus":@(resp.errCode),@"result":@"failed",@"memo":@"支付结果：失败！"} forKey:@"data"];
-                [self sendNotifi:resultDict];
-                break;
-        }
-        
-    }
-    
-}
-
 
 
 // 发起支付
@@ -124,6 +101,66 @@ static WXPayManager *instance = nil;
     }
 }
 
+#pragma mark - WXApiDelegate
+- (void)onResp:(BaseResp *)resp {
+    
+    if([resp isKindOfClass:[PayResp class]]){
+        //支付返回结果，实际支付结果需要去微信服务器端查询
+        
+        NSMutableDictionary *resultDict = [NSMutableDictionary dictionary];
+        
+        
+        switch (resp.errCode) {
+            case WXSuccess:
+                [resultDict setObject:@"success" forKey:@"result"];
+                [resultDict setObject:@{@"resultStatus":@"9000",@"result":@"success",@"memo":@"支付结果：成功！"} forKey:@"data"];
+                [self sendNotifi:resultDict];
+                break;
+                
+            default:
+                [resultDict setObject:@"failed" forKey:@"result"];
+                [resultDict setObject:@{@"resultStatus":@(resp.errCode),@"result":@"failed",@"memo":@"支付结果：失败！"} forKey:@"data"];
+                [self sendNotifi:resultDict];
+                break;
+        }
+        
+    }else if ([resp isKindOfClass:[SendAuthResp class]]){
+        
+        SendAuthResp* authResp = (SendAuthResp*)resp;
+        
+        if (![authResp.state isEqualToString:self.authState]) {
+            if(self.callBack){
+                self.callBack(@{@"result":@"failed",@"data":@"授权失败！"});
+            }
+        }
+        
+        switch (resp.errCode) {
+            case WXSuccess:
+                NSLog(@"RESP:code:%@,state:%@\n", authResp.code, authResp.state);
+                if(self.callBack){
+                    self.callBack(@{@"result":@"success",@"data":@{@"code":authResp.code,@"state":authResp.state}});
+                }
+                break;
+            case WXErrCodeAuthDeny:
+                if(self.callBack){
+                    self.callBack(@{@"result":@"failed",@"data":@"授权失败！"});
+                }
+                break;
+            case WXErrCodeUserCancel:
+                if(self.callBack){
+                    self.callBack(@{@"result":@"failed",@"data":@"用户取消！"});
+                }
+            default:
+                break;
+        }
+        
+        
+    }
+    
+}
+
+
+
 
 -(void)sendNotifi:(NSDictionary *)result{
     if (self.data && self.data[@"callback"]) {
@@ -133,5 +170,47 @@ static WXPayManager *instance = nil;
     }
 }
 
+
+//  =============   SSO   =============
+
+
+/**
+ 发起SSO Block参数 {"result":"success","data":"数据，或者msg"}
+
+ @param callBack 回调block
+ */
++(void)sendAuthRequest:(void(^)(NSDictionary *))callBack{
+    NSString *state = [self randomKey];
+    
+    [[self getInstance] sendAuthRequest:state callBack:callBack];
+}
+
+-(void)sendAuthRequest:(NSString *)state callBack:(void(^)(NSDictionary *))callBack{
+    self.callBack = callBack;
+    self.authState = state;
+    //构造SendAuthReq结构体
+    SendAuthReq* req =[[SendAuthReq alloc ] init ];
+    req.scope = @"snsapi_userinfo" ;
+    req.state = state ;
+    //第三方向微信终端发送一个SendAuthReq消息结构
+    if([WXApi sendReq:req] == NO){
+        if(callBack){
+            callBack(@{@"result":@"failed",@"data":@"发情登录失败！"});
+        }
+    }
+}
+
++ (NSString *)randomKey {
+    /* Get Random UUID */
+    NSString *UUIDString;
+    CFUUIDRef UUIDRef = CFUUIDCreate(NULL);
+    CFStringRef UUIDStringRef = CFUUIDCreateString(NULL, UUIDRef);
+    UUIDString = (NSString *)CFBridgingRelease(UUIDStringRef);
+    CFRelease(UUIDRef);
+    /* Get Time */
+    double time = CFAbsoluteTimeGetCurrent();
+    /* MD5 With Sale */
+    return [NSString stringWithFormat:@"%@%f", UUIDString, time];
+}
 
 @end
